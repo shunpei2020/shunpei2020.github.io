@@ -240,6 +240,14 @@
   .about{
     height: 200vh;
   }
+
+  .skill{
+    line-height: 4em;
+  }
+
+  .philosophy h2{
+    line-height: 3em;
+  }
 }
 
 
@@ -287,6 +295,19 @@
   }
   .work{
     margin-bottom: 30px;
+  }
+
+  .skills{
+    flex-direction: column;
+    height: 120vh;
+  }
+  .skill{
+    height: 50vh;
+    width: 80%;
+  }
+  .philosophy{
+    height: 50vh;
+    width: 80%;
   }
 }
 
@@ -486,5 +507,29 @@
   }
   .form h2{
     margin-top: 100px;
+  }
+
+  .skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 190vh;
+  }
+
+  .skill{
+    width: 80%;
+    margin: 20px auto;
+    line-height: 3em;
+    height: 80vh;
+    margin-bottom: 0;
+  }
+  .philosophy{
+    height: 80vh;
+    margin: 0 auto;
+  }
+  .philosophy p{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 4px;
   }
 }
