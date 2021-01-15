@@ -222,7 +222,7 @@
     width: 40%;
     line-height: 2em;
     height: 80vh;
-    font-family: '遊ゴシック体';
+    font-family: 'Poppins', sans-serif;
   }
   .philosophy h2{
     line-height: 5em;
@@ -232,6 +232,7 @@
   .philosophy p{
     font-size: 18px;
     line-height: 3em;
+   font-family: '遊ゴシック体’;
   }
 
 }
