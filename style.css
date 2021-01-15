@@ -197,6 +197,43 @@
     margin-top: 100px;
   }
 
+  .skills{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+  }
+  .skill{
+    width: 40%;
+    height: 80vh;
+    line-height: 5em;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+  }
+  .skill h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .philosophy{
+    width: 40%;
+    line-height: 2em;
+    height: 80vh;
+    font-family: '遊ゴシック体';
+  }
+  .philosophy h2{
+    line-height: 5em;
+    text-align: center;
+    font-size: 36px;
+  }
+  .philosophy p{
+    font-size: 18px;
+    line-height: 3em;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
