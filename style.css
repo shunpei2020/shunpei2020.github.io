@@ -1,5 +1,4 @@
 @media screen and (min-width: 481px){
-
   *{
     margin: 0;
     padding: 0;
@@ -155,19 +154,19 @@
 
   .works{
     width: 100%;
-    /* height: 200vh; */
-    align-items: center;
-    background-color: #eeeeee;
+    background-color: #fff;
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
   }
   .works h2{
     text-align: center;
-    margin-top: 40px;
+    padding-top: 40px;
     font-size: 40px;
   }
   .worksf{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 100px;
   }
   .works img{
@@ -181,58 +180,59 @@
     transform: scale(1.2);
     transition: all .5s;
   }
+  .work{
+    padding: 20px 50px;
+    margin-bottom: 40px;
+    border: 1px solid #eeeeee;
+  }
   .work p{
     margin-top: 20px;
-    text-align: center;
   }
   .work a{
     color: blue;
   }
-
-  .form{
-    height: 50vh;
-    text-align: center;
-  }
-  .form h2{
-    margin-top: 100px;
-  }
-
   .skills{
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
   }
   .skill{
-    width: 40%;
-    height: 80vh;
-    line-height: 5em;
+    width: 100%;
+    line-height: 3em;
     background-color: black;
     color: #fff;
-    padding: 15px;
+    padding: 50px 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .skill > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+  .lang{
+    width: 60%;
+    text-align: left;
   }
   .skill h2{
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
   }
-  .philosophy{
-    width: 40%;
-    line-height: 2em;
-    height: 80vh;
-    font-family: 'Poppins', sans-serif;
-  }
-  .philosophy h2{
-    line-height: 5em;
+  .skill p{
+    margin: auto;
+    font-size: 30px;
     text-align: center;
-    font-size: 36px;
+    letter-spacing: .1em;
   }
-  .philosophy p{
-    font-size: 18px;
-    line-height: 3em;
-   font-family: '遊ゴシック体’;
+  .skill img{
+    width: 130px;
+    height: 130px;
+    margin: 30px;
+    object-fit: cover;
+  }
+  footer{
+    display: none;
   }
 
 }
@@ -243,11 +243,7 @@
   }
 
   .skill{
-    line-height: 4em;
-  }
-
-  .philosophy h2{
-    line-height: 3em;
+    line-height: 2em;
   }
 }
 
@@ -296,19 +292,6 @@
   }
   .work{
     margin-bottom: 30px;
-  }
-
-  .skills{
-    flex-direction: column;
-    height: 120vh;
-  }
-  .skill{
-    height: 50vh;
-    width: 80%;
-  }
-  .philosophy{
-    height: 50vh;
-    width: 80%;
   }
 }
 
@@ -403,7 +386,7 @@
     width: 100%;
     height: 100vh;
     align-items: center;
-    background-image: url(img/trank.jpg);
+    background-image: url(img/trank-min.jpg);
     background-color: rgba(255, 255, 255, 0.4);
     background-blend-mode: lighten;
     background-size: cover;
@@ -478,6 +461,7 @@
     background-color: #eeeeee;
     font-family: 'Poppins', sans-serif;
     width: 100%;
+    max-height: 400vh;
   }
   .works h2{
     text-align: center;
@@ -511,26 +495,45 @@
   }
 
   .skills{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 170vh;
+    margin: 30px auto;
+    text-align: center;
   }
 
   .skill{
-    width: 80%;
-    margin: 20px auto;
-    line-height: 3em;
-    height: 60vh;
-    margin-bottom: 0;
+    width: 100%;
+    line-height: 2em;
   }
-  .philosophy{
-    height: 80vh;
-    margin: 0 auto;
+  .skill > div{
+    margin: 30px auto;
   }
-  .philosophy p{
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 4px;
+  .skill p{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  .lang img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  footer{
+    background-color: #000;
+    padding: 30px 20px;
+  }
+  .nav-link{
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-link a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .nav-link li{
+    list-style: none;
+    margin-right: 10px;
   }
 }
