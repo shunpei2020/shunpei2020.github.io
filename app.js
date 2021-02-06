@@ -4,11 +4,13 @@
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    const body = document.querySelector('body');
 
     // Toggle nav
     burger.addEventListener('click', () => {
       nav.classList.toggle('nav-active');
-      //li animatie
+      body.classList.toggle('noscroll');
+      //li animate
       navLinks.forEach((links, index) => {
         if (links.style.animation) {
           links.style.animation = '';
@@ -87,4 +89,11 @@
     window.addEventListener('scroll',scrollAppear);
   }
   visualEffect();
+
+  $('#top').click(function() {
+    $('body, html').animate({
+      scrollTop:0
+    }, 1000);
+    return false;
+  });
 }
